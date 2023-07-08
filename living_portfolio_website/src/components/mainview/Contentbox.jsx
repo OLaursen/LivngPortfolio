@@ -10,12 +10,13 @@ function MainView() {
     return (
         <>
         <div className="outer-border">
-            <div className="landingpage-menu">
+            
 
-            <p className="Title-Name">Oliver Laursen</p>  
+            <h1 className="Title-Name">Oliver Laursen</h1>  
             <p className="occupation"> Student at IT-University Copenhagen. </p>
-        
-        <ul className="main-menu">
+        <div className="menu">
+
+        <ul>
             <li>
             <button className="projects-button" onClick={() => handleClick(
                 <p className="project-side-text"> Currently the portfolio itself is my only project. But there's more to come soon.</p>
@@ -47,8 +48,9 @@ function MainView() {
             </div>
             
         </ul>
-
                                                                         </div>
+
+                                                                       
         </div>
         </>
     );
