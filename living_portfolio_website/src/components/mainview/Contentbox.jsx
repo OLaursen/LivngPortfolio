@@ -24,13 +24,22 @@ function MainView() {
                 </button>
             </li>
             <li>
-                <button to="/contact" onClick={() => handleClick( 
+                <button className="contact-button" to="/contact" onClick={() => handleClick( 
                     <div className="contact-side-text">
                                             <p className="contact-email"><strong>Email:</strong> oliverlaursen1998gmail.com </p>
                                             <p className="contact-linkedin"> <strong> Linked in:</strong> <a className="linkedin-link" href="https://dk.linkedin.com/in/oliver-laursen-swu2022"> My Profile </a></p>
                                             </div>
                                                                     )}>
                 <p className="contact-info">Contact info</p>
+                </button>
+            </li>
+            <li>
+                <button className="info-button" to="/info" onClick={() => handleClick( 
+                    <div className="contact-side-text">
+                                            <p className="experience">I have gathered different kinds of experiences through my life</p>
+                                            </div>
+                                                                    )}>
+                <p className="info">Info</p>
                 </button>
             </li>
             <div className="landingpage-text">
