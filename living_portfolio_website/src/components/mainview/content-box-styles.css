@@ -1,12 +1,18 @@
-.outer-border {
+.container {
     background-color: rgb(218, 212, 212);
     padding: 10px;
+    margin: 5px;
     height: 80vh;
     border: 2px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: start;
+    gap: 5px;
  
 
 }
 .Title-Name {
+    
     color: rgb(213, 140, 140);
     font-weight: bold;
     margin-bottom: 2px;
@@ -16,25 +22,33 @@
     display: block;
 }
 .occupation {
+    
     margin-top: 0;
     margin-bottom: 20;
+    padding-left: 10px;
+    padding-right: 10px;
     display: inline-block;
 }
-.landingpage-text {
+.menu {
+    grid-row: 2;
+    margin: 0;
+
+}
+li {
+    
+    list-style: none;
+    display: flexbox;
 
 }
 
-.projects-button, .contact-button, .info-button {
+.projects-button, .contact-button, .info-button, .home-button {
     border:none;
     background-color: inherit;
 }
-li {
-    display: block;
 
-  
-}
-.menu {
-    width:10vh;
-    margin: 0;
 
+.landingpage-text {
+    grid-column: 4;
+    grid-row: 4;
+    justify-items: end;
 }

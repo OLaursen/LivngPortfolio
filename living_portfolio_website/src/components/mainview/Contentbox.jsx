@@ -9,14 +9,22 @@ function MainView() {
 
     return (
         <>
-        <div className="outer-border">
+        <div className="container" >
             
-
-            <h1 className="Title-Name">Oliver Laursen</h1>  
-            <p className="occupation"> Student at IT-University Copenhagen. </p>
+            <div className="headline">
+                <h1 className="Title-Name">Oliver Laursen</h1>  
+                <p className="occupation"> Student at IT-University Copenhagen. </p>
+            </div>
         <div className="menu">
 
         <ul>
+            <li>
+            <button className="home-button" onClick={() => handleClick(
+                
+                )}>
+            <p className="projects-text">Home</p>
+                </button>
+            </li>
             <li>
             <button className="projects-button" onClick={() => handleClick(
                 <p className="project-side-text"> Currently the portfolio itself is my only project. But there's more to come soon.</p>
@@ -43,12 +51,13 @@ function MainView() {
                 <p className="info">Info</p>
                 </button>
             </li>
-            <div className="landingpage-text">
-                {sidetext}
-            </div>
+            
             
         </ul>
-                                                                        </div>
+        </div>
+              <div className="landingpage-text">
+                {sidetext}
+            </div>
 
                                                                        
         </div>
