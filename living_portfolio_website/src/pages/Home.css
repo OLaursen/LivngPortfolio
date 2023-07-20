@@ -1,0 +1,33 @@
+
+.col-11 {
+    display: inline-flex;
+    margin:0;
+    padding:0;
+    min-width: 80%;
+    }
+
+
+[class*="col-"] {
+    border: 1px solid black;
+}
+
+.col-1 {
+    display:inline-flex;
+    transform: rotate(-90deg);
+    position: flex;
+    margin-left:2px;
+    margin: 0;
+    padding: 0;
+}
+
+.content-area {
+    width: auto;
+    border: 1px solid red; 
+    padding: 4px;
+    margin: 0px;
+    min-width:fit-content;
+    display:block;
+    justify-content: space-around;
+    height: 100vh;
+
+}

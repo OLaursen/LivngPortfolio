@@ -1,17 +1,19 @@
-import React from 'react'
-import Content from '../components/mainview/Contentbox'
-import Buttonpack from '../components/sidebar/Togglepack';
+import React from 'react';
+import Content from '../components/mainview/Contentbox';
+import Buttonpack from '../components/sidebar/Togglepack'
+import "./Home.css";
 
 
 const Home = () => {
     return(
     <>
-    <h1>This is the homepage</h1>
-    <div className="col-1">
-        <Buttonpack />
-    </div>
-    <div className="col-11">
-        <Content />
+    <div className="content-area">
+        <div className="col-1">
+            <Buttonpack className="Buttonpack"/>
+        </div>
+        <div className="col-11">
+            <Content />
+        </div>
     </div>
     </>
     );

@@ -1,3 +1,10 @@
 .button-pack{
-    transform: rotate(-90);
+    align-items: center;
+    justify-content: center;
+}
+.light-mode {
+    margin-right: 2px;
+}
+.dark-mode {
+    margin-right: 0;
 }
